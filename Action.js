@@ -32,7 +32,7 @@ function create () {
     game.world.setBounds(-1000, -1000, 2000, 2000);
 
     //  Our tiled scrolling background
-    land = game.add.tileSprite(0, 0, 800, 600, 'earth');
+    land = game.add.tileSprite(0, 0, 1200, 800, 'earth');
     land.fixedToCamera = true;
 
     //  The base of our tank
@@ -64,9 +64,9 @@ function create () {
     //  Create some baddies to waste :)
     enemies = [];
 
-    enemiesTotal = 20;
-    enemiesAlive = 20;
-    playerHealth = 15;
+    enemiesTotal = 10;
+    enemiesAlive = 5;
+    playerHealth = 20;
 
     for (var i = 0; i < enemiesTotal; i++)
     {
@@ -144,7 +144,15 @@ function update () {
         addWalls();
         newLevel = newLevel * 2;
     }
+    if(playerHealth == 0){
+        background = game.add.tileSprite(game.camera.x+400, game.camera.y+200, 400, 185, "gameover"); 
+    }
+    if(enemiesAlive == 0){
+        background = game.add.tileSprite(32, 32, 400, 185, "gameover");    
+    }
+    
     game.physics.arcade.collide(tank, box);
+    game.physics.arcade.collide(enemies, box)
     game.physics.arcade.overlap(enemyBullets, tank, bulletHitPlayer, null, this);
     //If tank touches shroom, call buffOverlap function
     game.physics.arcade.overlap(tank, mushroom, mushroomBuff, null, this);
@@ -175,6 +183,7 @@ function update () {
     {
         //  The speed we'll travel at
         currentSpeed = 300;
+        
     }
     else
     {
@@ -211,6 +220,10 @@ function update () {
     if(playerHealth == 0){
         tank.kill();
         turret.kill();
+        shadow.kill();
+        var explosionAnimation = explosions.getFirstExists(false);
+        explosionAnimation.reset(tank.x, tank.y);
+        explosionAnimation.play('kaboom', 30, false, true);
     }
 
 }

@@ -10,7 +10,7 @@
     </head>
     <body>
         <script>
-            var game = new Phaser.Game(800, 600, Phaser.AUTO, 'phaser-example', { preload: preload, create: create, update: update, render: render });
+            var game = new Phaser.Game(1200, 800, Phaser.AUTO, 'phaser-example', { preload: preload, create: create, update: update, render: render });
     
             function preload () {
     
@@ -22,7 +22,7 @@
                 game.load.image('box', 'sprites/box.png');
                 game.load.spritesheet('kaboom', 'assets/games/tanks/explosion.png', 64, 64, 23);
                 game.load.spritesheet('coin', 'assets/sprites/coin.png', 32, 32, 6);
-                
+                game.load.image('gameover','gameover.png');
                 
             }
         </script>

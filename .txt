@@ -1,0 +1,163 @@
+Top-down 3v3 Multiplayer Arena Game
+    -not call of duty style
+    -Fast paced 
+    -Punishable for running and gunning - Like cs:go
+One Map, 3 champions
+
+Mage - Fire Blast, Arcane Blast, Healing Blast
+Warrior - Strike, Fury Spin, Rage
+Range - Single Shot, Rapid Shot, Healing Shot
+
+Buffs:
+    -Mana regenerator
+    -Hp regenerator
+    -Gold Earning Increaser
+    -Damage over time buff on auto attack
+    -
+    
+    
+Powerups:
+    -Random Powerups are generated across the map
+    -These include: Health Regen, Mana Regen, Team Attack Boost
+    
+Map is circular with 6 pillars
+Dragon in middle
+Activate 6 pillars for dragon to be on your side for 20 seconds
+
+
+      
+        x - SPAWN
+|--------------|     When you start, you get 500 Throne Coins
+|       |      |     Game Modes: Dragon Deathmatch - Forbidden Gladiator Deathmatch - Flaming Death Strike DeathMatch
+|    | drag|   |     DeathMatch - 50 Kills wins
+|    |     |   |     10.......3.2.1 - FIGHT!
+|       |      |     ItemShop - Make 5 items per champions (You can only have 3)
+|--------------|
+        x - SPAWN
+    
+    
+Attack Types:
+
+    AttackTypes:
+        -Target Cast        []            
+        -Skillshot          []     
+        -Throwable          [] 
+        -Wall               []
+    Effects:
+        Damage              []         
+        Damage Over Time    []
+        AOE Radius          []
+        Contagion           []
+        Sheild              []
+        Slow                []
+        Stun                []
+        Blind               []
+        Delay               []
+        
+        
+    
+    
+    
+"Class Abilities"{
+    "Tank"{
+        "1": "Deflect, Summons a wall of deflection that reflects any incoming prejectiles like a mirror",
+        "2": "Magnet, Pulls all prejectiles towards your center for as long as specified, consumes mana over time",
+        "3": "",
+        "4": "",
+        "5": "",
+    }
+    "Mage"{
+        "1": "Nuke, A literal Throwable nuke that applies a damage over time effect",
+        "2": "",
+        "3": "",
+        "4": "",
+        "5": "",
+    }
+    "Suport"{
+        "1": "Heal Skillshot nuke that deals negative true damage. Make sure not to hit the enemy however",
+        "2": "Attack Speed Sheild, A sheild that increases ones attack speed as the sheild is up",
+        "3": "Aura",
+        "4": "",
+        "5": "",
+    }
+    "Damage"{
+        "1": "",
+        "2": "",
+        "3": "",
+        "4": "",
+        "5": "",
+    }
+    "Assasin"{
+        "1": "",
+        "2": "",
+        "3": "",
+        "4": "",
+        "5": "",
+    }
+}
+    
+    
+
+    
+    
+    
+"Items"{
+    "Consumables"{
+        "Grenade": "If player does not dodge, they are inflicted with high damage and cc, designed for zoning" #Expensive!
+        "EPI-PEN": "Removes a target ally's Debuffs" #Expensive!
+        "Cake": "Gives a random chance to restore player to maximum health and mana" #Doesnt actually ever do anything, the cake is a lie
+        "Energy Drink": "Gives a momentary speed buff" #Expensive!
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
