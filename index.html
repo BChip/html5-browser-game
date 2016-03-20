@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>Mage</title>
+        <script src="//cdn.jsdelivr.net/phaser/2.2.2/phaser.min.js"></script>
+        <script src="Buffs.js"></script>
+        <script src="Mage.js"></script>
+        <script src="Action.js"></script>
+    </head>
+    <body>
+        <script>
+            var game = new Phaser.Game(800, 600, Phaser.AUTO, 'phaser-example', { preload: preload, create: create, update: update, render: render });
+    
+            function preload () {
+    
+                game.load.atlas('tank', 'assets/games/tanks/tanks.png', 'assets/games/tanks/tanks.json');
+                game.load.atlas('enemy', 'assets/games/tanks/enemy-tanks.png', 'assets/games/tanks/tanks.json');
+                game.load.image('bullet', 'assets/games/tanks/bullet.png');
+                game.load.image('earth', 'assets/games/tanks/scorched_earth.png');
+                game.load.image('mushroom', 'assets/sprites/mushroom2.png');
+                game.load.image('box', 'sprites/box.png');
+                game.load.spritesheet('kaboom', 'assets/games/tanks/explosion.png', 64, 64, 23);
+                game.load.spritesheet('coin', 'assets/sprites/coin.png', 32, 32, 6);
+                
+                
+            }
+        </script>
+    </body>
+</html>
